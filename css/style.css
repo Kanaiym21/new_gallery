@@ -53,7 +53,7 @@ a#trigram::before { /*-- uses ::before to change the menu icon --*/
   font-size: 4rem; /*-- makes it very large --*/
   position: relative; /*-- posititions it explicitly --*/
   top: -.5rem; /*-- a little space from the top --*/
-  right: 0; /*-- flush right --*/
+  right: 0; /*-- flush right --*/ 
 }
 main {
   padding: 1rem 2rem; /*-- adds inside space around the main content area --*/
@@ -92,6 +92,10 @@ main {
 }
 .slideshow h2 { /*-- styles the placeholder text (probably safe to delete) --*/
   font-size: 4rem; /*-- font is larger than normal --*/
+}
+.thumbs {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
 }
 .hero {
   padding: 4rem 0; /*-- top and bottom padding for the container --*/
