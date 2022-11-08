@@ -45,6 +45,8 @@ a.nav-link.logo {  /*-- just the site title --*/
 }
 a#trigram { /*-- hamburger menu icon --*/
   display: none;  /*-- default display is none --*/
+  font-size: 3rem;
+  align-self: stretch;
 }
 a#trigram::before { /*-- uses ::before to change the menu icon --*/
   content: '\2630'; /*-- sets it to show the hamburger icon --*/
