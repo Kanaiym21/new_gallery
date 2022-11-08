@@ -4,17 +4,17 @@ function sampleFunction() {
 }
 //slideshow function
 function showSlides(n) {
-  let k;
+  let i;
   let slides = document.getElementsByClassName("slides");
   let dots = document.getElementsByClassName("thumb");
   let captionText = document.getElementById("caption");
   if (n > slides.length) {slidesIndex = 1};
   if (n < 1) (slideIndex = slides.length);
-  for (k = 0; i < slides.length; k++) {
+  for (i = 0; i < slides.length; i++) {
     slides[k].style.display = "none";
   }
-  for (k = 0; k < dots.length; k++) {
-    dots[k].className = dots[k].className.replace("active", "");
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace("active", "");
   }
 slides[slideIndex-1].style.display = "block";
 dots[slideIndex-1].className += "active";
