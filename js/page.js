@@ -1,4 +1,13 @@
 // a test function that runs when the button is clicked
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex +- n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 function sampleFunction() {
   alert("You clicked the button");
 }
