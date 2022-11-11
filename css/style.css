@@ -69,7 +69,15 @@ main {
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+  display: flex; /*-- declares a flex container --*/
+  justify-content: center; /*-- center in the main axis --*/
+  align-items: center; /*-- center in the cross axis --*/
+  height: 55rem; /*-- fixed hieght, probably delete this --*/
+  border: 2px dashed var(--dkmid); /*-- unsubtle border --*/
+  border-radius: 8px; /*-- rounded corners --*/
+  background-color: var(--light); /*-- a bit of light background color --*/
+  color: var(--dkmid); /*-- text color is mid --*/
+  position: relative; /*-- allows explicit positioning for children --*/
 }
 
 /* Add a pointer when hovering over the thumbnail images */
