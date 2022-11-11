@@ -20,49 +20,71 @@
     <a href="#" class="nav-link" id="trigram" onclick="navToggle()"></a>
   </header>
   <main>
-    <section class="slideshow">
-      <!--slider goes here-->
-      <div class="slides">
-        <img src="img/nothing_photo.jpg" style="width:100%">
-      </div>
-      <div class="slides">
-        <img src="img/lady+laptop.jpg" style="width:100%" />
-      </div>
-      <div class="slides">
-        <img src="img/angel_food_cake.jpg" style="width:100%" />
-      </div>
-      <div class="slides">
-        <img src="img/camera.jpg"style="width:100%"/>
-      </div>
-      <div class="slides">
-        <img src="img/programming+cake.jpg" style="width:100%" />
-      </div>
-      <div class="slides">
-        <img src="img/hummingbird cake.jpg" style="width:100%" />
-      </div>
-      <div class="controls">
-        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
-        <button class="next" onlick="plusSlides(1)">&#10095;</button>
-      </div>
-      <div class="caption-wrap">
-        <p id="caption"></p>
-      </div>
-    </section>
-    <div class="thumbs">
-      <img class="thumb" src="img/nothing_photo.jpg" style="width:100%" onclick="currentSlide(1)"
-      alt="Inspring photo" />
-      <img class="thumb" src="img/lady+laptop.jpg" style="width:100%" onclick="currentSlide(2)"
-      alt="Inspring photo" />
-      <img class="thumb" src="img/angel_food_cake.jpg" style="width:100%" onclick="currentSlide(3)"
-      alt="Inspring photo" />
-      <img class="thumb" src="img/camera.jpg" style="width:100%" onclick="currentSlide(4)"
-      alt="Inspring photo" />
-      <img class="thumb" src="img/programming+cake.jpg" style="width:100%" onclick="currentSlide(5)"
-      alt="Inspring photo" />
-      <img class="thumb" src="img/hummingbird cake.jpg" style="width:100%" onclick="currentSlide(6)"
-      alt="Inspring photo" />
-      </div>
+<!-- Container for the image gallery -->
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="img/hummingbird cake.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="img/lady_laptop.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="img/camera.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="img/nothing_photo.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="img/programming_cake.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="img/tea.jpg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/hummingbird_cake.jpg" style="width:100%" onclick="currentSlide(1)" alt="Because it is Monday">
     </div>
+    <div class="column">
+      <img class="demo cursor" src="img/lady_laptop.jpg" style="width:100%" onclick="currentSlide(2)" alt="Lady programmer">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/camera.jpg" style="width:100%" onclick="currentSlide(3)" alt="Camera">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/nothing_photo.jpg" style="width:100%" onclick="currentSlide(4)" alt="Process of baking">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/programming_cake.jpg" style="width:100%" onclick="currentSlide(5)" alt="Programming and a cake">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/tea.jpg" style="width:100%" onclick="currentSlide(6)" alt="Cake">
+    </div>
+  </div>
+</div>
     <section class="hero">
       <h2>Images from <em>Lorem Picsum</em></h2>
       <p>Visit <a href="https://picsum.photos/">that site</a> to learn how to use them.</p>
@@ -143,7 +165,7 @@
     </section>
   </main>
   <footer>
-    <p>&copy;2022 Your Name</p>
+    <p>&copy;2022 Kanaiym Abdigaparova</p>
   </footer>
   <script src="js/page.js"></script>
 </body>

@@ -58,44 +58,91 @@ a#trigram::before { /*-- uses ::before to change the menu icon --*/
 main {
   padding: 1rem 2rem; /*-- adds inside space around the main content area --*/
 }
-.slideshow { /*-- replace these styles with your slideshow styles --*/
-  display: flex; /*-- declares a flex container --*/
-  justify-content: center; /*-- center in the main axis --*/
-  align-items: center; /*-- center in the cross axis --*/
-  height: 55rem; /*-- fixed hieght, probably delete this --*/
-  border: 2px dashed var(--dkmid); /*-- unsubtle border --*/
-  border-radius: 8px; /*-- rounded corners --*/
-  background-color: var(--light); /*-- a bit of light background color --*/
-  color: var(--dkmid); /*-- text color is mid --*/
-  position: relative; /*-- allows explicit positioning for children --*/
+* {
+  box-sizing: border-box;
 }
-.controls button { /*-- you'll probably replace all .controls styles with your own --*/
-  cursor: pointer; /*-- changes hover cursor to the hand --*/
-  position: absolute; /*-- positions arrows absolutely--*/
-  width: auto; /*-- matches width of parent --*/
-  top: 40%; /*-- positions arrows from parent top --*/
-  color: var(--ltmid); /*-- arrow color --*/
-  background-color: transparent; /*-- hides button background --*/
-  border: none; /*-- removes default button border --*/
-  font-weight: 800; /*-- selects heavier font --*/
-  font-size: 8rem; /*-- sets arrow font size --*/
-  transition: 0.2s ease; /*-- sets transition speed for arrow hover--*/
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
 }
-.controls button:hover {
-  color: var(--accent); /*-- changes button color on hover --*/
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
 }
-.controls button:nth-child(1) {
-  left: 1rem; /*-- positions first arrow to the left --*/
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
 }
-.controls button:nth-child(2) {
-  right: 1rem; /*-- positions second arrow to the right --*/
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
 }
-.slideshow h2 { /*-- styles the placeholder text (probably safe to delete) --*/
-  font-size: 4rem; /*-- font is larger than normal --*/
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
-.thumbs {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
 }
 .hero {
   padding: 4rem 0; /*-- top and bottom padding for the container --*/
