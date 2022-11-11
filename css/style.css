@@ -144,7 +144,20 @@ main {
 .demo:hover {
   opacity: 1;
 }
-
+.hero {
+  padding: 4rem 0; /*-- top and bottom padding for the container --*/
+  display: flex; /*-- declares a flex container --*/
+  flex-direction: column; /*-- direction downward --*/
+  justify-content: center; /*-- vertical center --*/
+  align-items: center; /*-- horizontal center --*/
+  background-color: var(--ltmid); /*-- light color --*/
+  width: 100vw; /*-- extra wide --*/
+  margin: 2rem 0 1rem -2rem; /*-- negative right margin compensates for extra width --*/
+}
+.hero > * { /*-- targets all direct children of .hero --*/
+  margin: 0; /*-- zeroes their margins --*/
+  padding: 0; /*-- zeroes their padding --*/
+}
 .grid-cont { /*-- styles the main grid container for media cards --*/
   padding: 2rem 0; /*-- top and bottom padding for the grid container --*/
   display: grid; /*-- declares this a grid container --*/
