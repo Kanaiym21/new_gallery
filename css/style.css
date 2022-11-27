@@ -64,6 +64,9 @@ main {
 h4 {
   text-align: center;
 }
+p {
+  text-align: left;
+}
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
