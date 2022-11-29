@@ -44,7 +44,7 @@ a.nav-link.logo {  /*-- just the site title --*/
   font-weight: 900; /*-- set to heaviest font --*/
 }
 a#trigram { /*-- hamburger menu icon --*/
-  display: none;  /*-- default display is none --*/
+  display:block;  
   font-size: 3rem;
   align-self: stretch;
 }
@@ -63,9 +63,6 @@ main {
 }
 h4 {
   text-align: center;
-}
-p {
-  text-align: left;
 }
 /* Position the image container (needed to position the left and right arrows) */
 .container {
@@ -221,7 +218,7 @@ p {
   line-height: 45px;
   margin: 0px 0px 2em;
   max-width: 160px;
-  position: relative;
+  position:relative;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
