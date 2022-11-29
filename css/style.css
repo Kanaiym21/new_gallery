@@ -209,7 +209,7 @@ h4 {
 .btn-text-stretch {
   letter-spacing: 0px;
   box-sizing: inherit;
-  transition-property: all;
+  transition-property:all;
   transition-duration: 0.6s;
   transition-timing-function: ease;
   cursor: pointer;
@@ -253,7 +253,6 @@ h4 {
   top: 0px;
   width: 70%;
 } 
- 
 .btn-text-stretch--pink {
   color: rgb(255, 99, 146);
 } 
